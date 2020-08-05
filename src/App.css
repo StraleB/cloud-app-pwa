@@ -1,38 +1,154 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+font-family: 'Domine', serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+  background-color: #d1d2d3;
+}
+
+h1{
+  font-family: 'Domine', serif;
+  font-size: 6vh;
+  color: #37474F;
+  margin: 2.5em 2em;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  margin: -3.5em 4em;
+}
+
+button{
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  background-color: #37474F;
+  color: #68C2C8;
+  font-size: 2.3vh;
+  outline: none;
+  border: transparent;
+  padding: 0.5em 1em;
+  transition: ease-in-out 0.2s;
+  margin: 6em 5.2em;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #4a5a62;
+  color: #8bdbe0;
+}
+
+img[alt="img"]{
+  height: 80vh;
+  right: 0;
+  top:0;
+  position: absolute;
+}
+
+a{
+  text-decoration: none;
+  color: #37474F;
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1280px) {
+  img[alt="img"]{
+    height: 60vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1080px) {
+  h1{
+    font-size: 5vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  p{
+    font-size: 2.5vh;
+  }
+  
+  button{
+    font-size: 2.1vh;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 4.5vh;
+    margin: 1em 18vw;
+    width: 100%;
+  }
+  
+  p{
+    font-size: 2.3vh;
+    margin: 0em 18vw;
+    width: 100%;
+  }
+  
+  button{
+    font-size: 2.1vh;
+    margin: 2em 18.7vw;
+    width: 53vw;
+  }
+
+  img[alt="img"]{
+    right: 5em;
+    top:17em;
+  }
+
+}
+
+
+@media only screen and (max-width: 420px) {
+  h1{
+    font-size: 3vh;
+    margin: 1em 16vw;
+    width: 100%;
+  }
+  
+  p{
+    font-size: 2vh;
+    margin: 0em 15vw;
+    width: 70%;
+   }
+
+  button{
+    font-size: 2vh;
+    width: 63vw;
+    margin: 2em 16vw;
+  }
+
+  img[alt="img"]{
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1{
+    font-size: 3vh;
+    margin: 1em 17vw;
+    width: 100%;
+  }
+  
+  p{
+    font-size: 2vh;
+    margin: 0em 16vw;
+    width: 70%;
+   }
+
+  button{
+    font-size: 2vh;
+    width: 68vw;
+    margin: 2em 16vw;
+  }
+
+  img[alt="img"]{
+    height: 30vh;
   }
 }

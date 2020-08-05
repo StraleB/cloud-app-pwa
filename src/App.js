@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import picture from './Image folder-amico (1).png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lion Cloud Storage</h1>
+      <p>Test our service for 2 months free trial and <br/>100GB of storage
+      after that check some of <br/> our offers to see which one 
+      fits you</p>
+      <button>Get Started</button>
+      <img src={picture} alt="img"/>
+
+<a href="https://stories.freepik.com/work">Illustration by Stories by Freepik</a>
     </div>
   );
 }
